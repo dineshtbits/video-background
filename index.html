@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML5 Video Background</title>
+    <link rel="stylesheet" href="css/video.css">
+  </head>
+  <body>
+    <div class="content">
+      <a href="https://google.com" class="content_link" title="Go to Google.com" target="_blank">Go to Google.com</a>
+    </div>
+
+    <video id="my-video" class="video" loop="loop" muted>
+      <source src="http://techslides.com/demos/sample-videos/small.mp4" type="video/mp4">
+    </video>
+
+    <script>
+      (function() {
+        var video = document.getElementById("my-video");
+        video.addEventListener( "canplay", function() {
+          video.play();
+        });
+      })();
+      </script>
+  </body>
+</html>
